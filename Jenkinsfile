@@ -6,7 +6,7 @@ pipeline {
         stage ('Build docker iamge') {
             steps {
                 script {
-                    dockerapp = docker.build("meurerfagner/kub-news:${env.BUILD_ID}",'-f .src/Dockerfile ./src')
+                    dockerapp = docker.build("meurerfagner/kub-news:${env.BUILD_ID}",'-f ./src/Dockerfile ./src')
                 }
             }
         }
