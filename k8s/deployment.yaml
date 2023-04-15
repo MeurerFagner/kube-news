@@ -53,7 +53,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: meurerfagner/kub-news:v1
+          image: meurerfagner/kub-news:{{TAG}}
           ports:
           - containerPort: 8080
           env:
